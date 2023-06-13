@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    if (!createConnection()) // Aufbau der Verbindung zur SQL Datenbank
+    if (!createConnection()) // Establishing the connection to the SQL database
     {
         return EXIT_FAILURE;
     }
