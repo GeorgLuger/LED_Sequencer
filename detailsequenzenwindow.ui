@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailSequenzenWindow</class>
+ <widget class="QDialog" name="DetailSequenzenWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sende Effekt</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>251</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="effektLabel">
+      <property name="text">
+       <string>Effekt</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="effektComboBox"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="farbeLabel">
+      <property name="text">
+       <string>Farbe</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="farbeComboBox"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="tempoLabel">
+      <property name="text">
+       <string>Tempo [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="tempoSpinBox"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="intensitaetLabel">
+      <property name="text">
+       <string>Intensität [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="intensitaetSpinBox"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="zeitdauerLabel">
+      <property name="text">
+       <string>Zeitdauer [0-3600 s]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QSpinBox" name="zeitdauerSpinBox"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="helligkeitLabel">
+      <property name="lineWidth">
+       <number>-4</number>
+      </property>
+      <property name="text">
+       <string>Helligkeit [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="helligkeitSpinBox"/>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="QPushButton" name="pushsendeEffekt">
+      <property name="tabletTracking">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Effekt Testen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="tableViewSequenzen">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>821</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushaddEffekt">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>210</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Effekt hinzufügen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushentfEffekt">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>210</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Letzten Effekt löschen</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>471</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="sequenzNameLineEdit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="sequenzNameLabel">
+      <property name="text">
+       <string>Sequenz Name</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

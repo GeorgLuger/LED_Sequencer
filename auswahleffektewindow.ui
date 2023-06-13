@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuswahlEffekteWindow</class>
+ <widget class="QDialog" name="AuswahlEffekteWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>433</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sende Effekt</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>251</width>
+     <height>242</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="effektLabel">
+      <property name="text">
+       <string>Effekt</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="effektComboBox"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="farbeLabel">
+      <property name="text">
+       <string>Farbe</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="farbeComboBox"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="tempoLabel">
+      <property name="text">
+       <string>Tempo [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="tempoSpinBox"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="intensitaetLabel">
+      <property name="text">
+       <string>Intensität [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="intensitaetSpinBox"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="zeitdauerLabel">
+      <property name="text">
+       <string>Zeitdauer [0-3600 s]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QSpinBox" name="zeitdauerSpinBox"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="helligkeitLabel">
+      <property name="lineWidth">
+       <number>-4</number>
+      </property>
+      <property name="text">
+       <string>Helligkeit [0-255]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="helligkeitSpinBox"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushsendeEffekt">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>251</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Effekt senden</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

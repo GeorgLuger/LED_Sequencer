@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>757</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LED Sequenzer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>757</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAllgemein">
+    <property name="title">
+     <string>Allgemein</string>
+    </property>
+    <addaction name="actionExport_Sequenzen"/>
+    <addaction name="actionImport_Sequenzen"/>
+    <addaction name="actionDelete_All_Sequenzen"/>
+    <addaction name="actionProgramm_Beenden"/>
+   </widget>
+   <widget class="QMenu" name="menuEffekte">
+    <property name="title">
+     <string>Effekte</string>
+    </property>
+    <addaction name="actionSende_Effekte"/>
+    <addaction name="actionListe_Effekte"/>
+   </widget>
+   <widget class="QMenu" name="menuSequenzen">
+    <property name="title">
+     <string>Sequenzen</string>
+    </property>
+    <addaction name="actionNeue_Sequenz"/>
+    <addaction name="actionSende_Sequenz"/>
+    <addaction name="actionLoesche_Sequenz"/>
+    <addaction name="actionListe_Sequenzen"/>
+   </widget>
+   <widget class="QMenu" name="menuTemposteuerung_optional">
+    <property name="title">
+     <string>Temposteuerung (optional)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHilfe">
+    <property name="title">
+     <string>Hilfe</string>
+    </property>
+    <addaction name="actionHilfoeffnen"/>
+   </widget>
+   <widget class="QMenu" name="menuMicrocontroller_optional">
+    <property name="title">
+     <string>Microcontroller (optional)</string>
+    </property>
+   </widget>
+   <addaction name="menuAllgemein"/>
+   <addaction name="menuSequenzen"/>
+   <addaction name="menuEffekte"/>
+   <addaction name="menuMicrocontroller_optional"/>
+   <addaction name="menuTemposteuerung_optional"/>
+   <addaction name="menuHilfe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExport_Sequenzen">
+   <property name="text">
+    <string>Export Sequenzen</string>
+   </property>
+  </action>
+  <action name="actionImport_Sequenzen">
+   <property name="text">
+    <string>Import Sequenzen</string>
+   </property>
+  </action>
+  <action name="actionProgramm_Beenden">
+   <property name="text">
+    <string>Programm Beenden</string>
+   </property>
+  </action>
+  <action name="actionNetzwerk_Scan">
+   <property name="text">
+    <string>Netzwerk Scan</string>
+   </property>
+  </action>
+  <action name="actionListe_Microcontroller">
+   <property name="text">
+    <string>Liste Microcontroller</string>
+   </property>
+  </action>
+  <action name="actionSende_Effekte">
+   <property name="text">
+    <string>Sende Effekte</string>
+   </property>
+  </action>
+  <action name="actionListe_Effekte">
+   <property name="text">
+    <string>Liste Effekte Presets</string>
+   </property>
+  </action>
+  <action name="actionNeue_Sequenz">
+   <property name="text">
+    <string>Neue Sequenz</string>
+   </property>
+  </action>
+  <action name="actionLoesche_Sequenz">
+   <property name="text">
+    <string>Lösche Sequenz</string>
+   </property>
+  </action>
+  <action name="actionSende_Sequenz">
+   <property name="text">
+    <string>Sende Sequenz</string>
+   </property>
+  </action>
+  <action name="actionListe_Sequenzen">
+   <property name="text">
+    <string>Liste Sequenzen</string>
+   </property>
+  </action>
+  <action name="actionHilfoeffnen">
+   <property name="text">
+    <string>Hilfe öffnen</string>
+   </property>
+  </action>
+  <action name="actionDelete_All_Sequenzen">
+   <property name="text">
+    <string>Delete All Sequenzen</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
